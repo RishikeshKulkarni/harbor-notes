@@ -1,0 +1,834 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="referrer" content="no-referrer">
+<title>EGF Interview Dossier · Karolos Travassaros · 18 May 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F4EFE6;
+    --paper-2:#EBE4D5;
+    --ink:#191613;
+    --ink-soft:#3A332C;
+    --muted:#736A5E;
+    --rule:#D6CDBC;
+    --rule-soft:#E5DECF;
+    --accent:#8A2A1D;
+    --accent-2:#2C5A3E;
+    --gold:#A6803E;
+    --callout:#EFE7D5;
+    --shadow:0 1px 0 rgba(25,22,19,.04), 0 8px 24px -16px rgba(25,22,19,.18);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--paper);color:var(--ink);font-family:'Inter',system-ui,sans-serif;font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+  body{padding-bottom:6rem}
+  ::selection{background:var(--ink);color:var(--paper)}
+
+  .topbar{position:sticky;top:0;z-index:20;background:var(--ink);color:var(--paper);border-bottom:1px solid #000}
+  .topbar-inner{max-width:1180px;margin:0 auto;padding:.6rem 1.25rem;display:flex;align-items:center;gap:1.25rem;flex-wrap:wrap;font-size:.82rem;letter-spacing:.02em}
+  .topbar .pip{display:inline-block;width:.4rem;height:.4rem;border-radius:50%;background:var(--accent);margin-right:.5rem;transform:translateY(-1px)}
+  .topbar strong{font-weight:600;letter-spacing:.04em;text-transform:uppercase;font-size:.72rem;opacity:.6;margin-right:.4rem}
+  .topbar .sep{opacity:.25}
+
+  .page{max-width:1180px;margin:0 auto;padding:2.25rem 1.25rem 0}
+
+  .masthead{border-bottom:1px solid var(--rule);padding-bottom:1.25rem;margin-bottom:2rem;display:flex;justify-content:space-between;align-items:flex-end;gap:2rem;flex-wrap:wrap}
+  .masthead .brand{font-family:'Fraunces',serif;font-weight:600;font-size:.85rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent)}
+  .masthead h1{font-family:'Fraunces',serif;font-weight:500;font-size:clamp(1.9rem,3.2vw,2.6rem);line-height:1.05;letter-spacing:-.015em;margin:.4rem 0 0;font-variation-settings:"opsz" 96}
+  .masthead .meta{font-size:.85rem;color:var(--muted);text-align:right;font-variant-numeric:tabular-nums}
+  .masthead .meta b{color:var(--ink-soft);font-weight:600}
+
+  .layout{display:grid;grid-template-columns:200px 1fr;gap:3rem}
+  @media (max-width:920px){.layout{grid-template-columns:1fr;gap:1rem}}
+
+  nav.toc{position:sticky;top:3rem;align-self:start;font-size:.82rem;border-left:1px solid var(--rule);padding:.25rem 0 .25rem 1rem;max-height:calc(100vh - 5rem);overflow:auto}
+  nav.toc ol{list-style:none;padding:0;margin:0;counter-reset:toc}
+  nav.toc li{counter-increment:toc;margin:.45rem 0;position:relative;padding-left:1.5rem}
+  nav.toc li::before{content:counter(toc,decimal-leading-zero);position:absolute;left:0;top:.05rem;font-family:'JetBrains Mono',monospace;font-size:.68rem;color:var(--muted);letter-spacing:.05em}
+  nav.toc a{color:var(--ink-soft);text-decoration:none;border-bottom:1px solid transparent}
+  nav.toc a:hover{color:var(--accent);border-bottom-color:currentColor}
+  @media (max-width:920px){nav.toc{display:none}}
+
+  section{padding:2rem 0 2.25rem;border-bottom:1px solid var(--rule-soft);scroll-margin-top:4rem}
+  section:last-of-type{border-bottom:none}
+  section > .label{display:flex;align-items:center;gap:.75rem;margin-bottom:.6rem}
+  section > .label .num{font-family:'JetBrains Mono',monospace;font-size:.7rem;color:var(--accent);letter-spacing:.1em}
+  section > .label .tag{font-family:'JetBrains Mono',monospace;font-size:.7rem;color:var(--muted);letter-spacing:.12em;text-transform:uppercase}
+  section h2{font-family:'Fraunces',serif;font-weight:500;font-size:clamp(1.55rem,2.4vw,2.05rem);letter-spacing:-.01em;margin:0 0 1rem;line-height:1.1;font-variation-settings:"opsz" 96}
+  section h3{font-family:'Fraunces',serif;font-weight:600;font-size:1.15rem;letter-spacing:-.005em;margin:1.4rem 0 .6rem}
+  section p{margin:.6rem 0;color:var(--ink-soft);max-width:68ch}
+  section ul,section ol{padding-left:1.1rem;color:var(--ink-soft);max-width:68ch}
+  section li{margin:.3rem 0}
+  section a{color:var(--accent);text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--accent) 30%,transparent)}
+  section a:hover{border-bottom-color:var(--accent)}
+
+  .card{background:#fff;border:1px solid var(--rule);border-radius:6px;padding:1.1rem 1.25rem;box-shadow:var(--shadow)}
+  .callout{background:var(--callout);border-left:3px solid var(--accent);padding:1rem 1.15rem;border-radius:0 4px 4px 0;margin:1rem 0}
+  .callout .kicker{font-family:'JetBrains Mono',monospace;font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-bottom:.25rem}
+  .callout p{margin:0 0 .35rem;color:var(--ink)}
+  .callout p:last-child{margin-bottom:0}
+
+  .facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule);border-radius:6px;overflow:hidden}
+  .facts .f{background:var(--paper);padding:.85rem 1rem}
+  .facts .k{font-family:'JetBrains Mono',monospace;font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:.2rem}
+  .facts .v{font-family:'Fraunces',serif;font-weight:500;font-size:1.05rem;color:var(--ink);line-height:1.25}
+  .facts .v small{display:block;font-family:'Inter',sans-serif;font-weight:400;font-size:.78rem;color:var(--muted);margin-top:.15rem;letter-spacing:0;text-transform:none}
+
+  .person{display:grid;grid-template-columns:1fr;gap:.6rem;padding:1.1rem 1.25rem;background:#fff;border:1px solid var(--rule);border-radius:6px;margin:.6rem 0}
+  .person .nm{font-family:'Fraunces',serif;font-weight:600;font-size:1.15rem;letter-spacing:-.005em}
+  .person .ti{font-family:'JetBrains Mono',monospace;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+  .person .bd{font-size:.9rem;color:var(--ink-soft);line-height:1.5}
+
+  .org{font-family:'JetBrains Mono',monospace;font-size:.82rem;background:#fff;border:1px solid var(--rule);border-radius:6px;padding:1.1rem 1.25rem;color:var(--ink-soft);overflow:auto;white-space:pre;line-height:1.55}
+  .org .you{background:#FFEEB7;padding:0 .35rem;border-radius:3px;color:var(--ink);font-weight:600}
+  .org .him{background:#F2C9C0;padding:0 .35rem;border-radius:3px;color:var(--ink);font-weight:600}
+  .org .her{background:#CDE0D2;padding:0 .35rem;border-radius:3px;color:var(--ink);font-weight:600}
+
+  table{width:100%;border-collapse:collapse;margin:1rem 0;font-size:.9rem}
+  th,td{text-align:left;padding:.65rem .85rem;border-bottom:1px solid var(--rule-soft);vertical-align:top}
+  th{font-family:'JetBrains Mono',monospace;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:500;border-bottom:1px solid var(--rule)}
+  td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
+  td .ladder{display:inline-block;margin-top:.35rem;font-family:'JetBrains Mono',monospace;font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-2);background:#F0F5F1;border:1px solid #C9DCCF;padding:.18rem .42rem;border-radius:3px}
+
+  /* STRATEGIES */
+  .strat{display:grid;grid-template-columns:1fr;gap:.7rem;margin:1rem 0}
+  .strat .row{background:#fff;border:1px solid var(--rule);border-radius:6px;padding:1rem 1.2rem;display:grid;grid-template-columns:1fr;gap:.45rem}
+  @media (min-width:760px){.strat .row{grid-template-columns:14rem 1fr}}
+  .strat .nm{font-family:'Fraunces',serif;font-weight:600;font-size:1.02rem;line-height:1.25;letter-spacing:-.005em;color:var(--ink)}
+  .strat .nm small{display:block;font-family:'JetBrains Mono',monospace;font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:.2rem;font-weight:500}
+  .strat .body{font-size:.88rem;line-height:1.55;color:var(--ink-soft)}
+  .strat .body p{margin:0 0 .35rem;max-width:none}
+  .strat .body p:last-child{margin:0}
+  .strat .hits{margin-top:.45rem;display:flex;gap:.35rem;flex-wrap:wrap}
+  .strat .hits .pc{font-family:'JetBrains Mono',monospace;font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;padding:.2rem .5rem;background:#F0F5F1;color:var(--accent-2);border:1px solid #C9DCCF;border-radius:3px}
+
+  /* Q&A */
+  .qlist{counter-reset:q;list-style:none;padding:0;margin:0}
+  .qlist > li{counter-increment:q;padding:1.25rem 0 1.4rem;border-bottom:1px solid var(--rule-soft);display:grid;grid-template-columns:2.6rem 1fr;gap:.6rem}
+  .qlist > li:last-child{border-bottom:none}
+  .qlist > li::before{content:"Q" counter(q,decimal-leading-zero);font-family:'JetBrains Mono',monospace;font-size:.7rem;color:var(--accent);padding-top:.3rem;letter-spacing:.06em;font-weight:600}
+  .qlist .q{font-family:'Fraunces',serif;font-weight:600;font-size:1.08rem;line-height:1.3;letter-spacing:-.005em;color:var(--ink);margin:0 0 .55rem}
+  .qlist .say{background:#fff;border:1px solid var(--rule);border-radius:5px;padding:.7rem .85rem;margin:.4rem 0;position:relative;font-size:.92rem;line-height:1.55;color:var(--ink);font-family:'Fraunces',serif;font-style:italic}
+  .qlist .say::before{content:"Say →";font-family:'JetBrains Mono',monospace;font-style:normal;font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);display:inline-block;margin-right:.4rem;font-weight:600;vertical-align:.05em}
+  .qlist .meta{margin:.45rem 0;font-size:.86rem;line-height:1.5;color:var(--ink-soft);display:grid;grid-template-columns:5.5rem 1fr;gap:.25rem .65rem;align-items:start}
+  .qlist .meta .lbl{font-family:'JetBrains Mono',monospace;font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);padding-top:.18rem;font-weight:600}
+  .qlist .meta .lbl.avoid{color:var(--muted)}
+  .qlist .meta p{margin:0;color:var(--ink-soft)}
+  .qlist .meta p b{color:var(--ink);font-weight:600}
+
+  .alist{counter-reset:qa;list-style:none;padding:0;margin:0}
+  .alist > li{counter-increment:qa;padding:1rem 0 1.1rem;border-bottom:1px solid var(--rule-soft);display:grid;grid-template-columns:2.6rem 1fr;gap:.6rem}
+  .alist > li:last-child{border-bottom:none}
+  .alist > li::before{content:"A" counter(qa,decimal-leading-zero);font-family:'JetBrains Mono',monospace;font-size:.7rem;color:var(--accent-2);padding-top:.25rem;letter-spacing:.06em;font-weight:600}
+  .alist .q{font-family:'Fraunces',serif;font-weight:600;font-size:1rem;line-height:1.35;color:var(--ink);margin:0 0 .35rem}
+  .alist .why{font-size:.85rem;line-height:1.5;color:var(--ink-soft);margin:0;font-style:italic}
+  .alist .why b{color:var(--ink);font-weight:600;font-style:normal}
+
+  .traps{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1rem 0}
+  @media (max-width:720px){.traps{grid-template-columns:1fr}}
+  .traps .col{background:#fff;border:1px solid var(--rule);border-radius:6px;padding:1rem 1.1rem}
+  .traps .col.bad{border-left:3px solid var(--muted)}
+  .traps .col.good{border-left:3px solid var(--accent-2)}
+  .traps h4{margin:0 0 .55rem;font-family:'JetBrains Mono',monospace;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+  .traps .col.good h4{color:var(--accent-2)}
+  .traps p{margin:.3rem 0;font-size:.88rem;color:var(--ink-soft)}
+
+  .gloss{column-count:2;column-gap:2rem;font-size:.88rem;color:var(--ink-soft)}
+  @media (max-width:720px){.gloss{column-count:1}}
+  .gloss dt{font-family:'Fraunces',serif;font-weight:600;color:var(--ink);margin-top:.6rem;break-after:avoid}
+  .gloss dt:first-child{margin-top:0}
+  .gloss dd{margin:0 0 .3rem;padding:0;break-inside:avoid}
+
+  .chips{display:flex;gap:.4rem;flex-wrap:wrap;margin:.5rem 0}
+  .chip{font-family:'JetBrains Mono',monospace;font-size:.64rem;letter-spacing:.12em;text-transform:uppercase;padding:.25rem .55rem;border:1px solid var(--rule);border-radius:99px;color:var(--ink-soft);background:#fff}
+  .chip.live{background:var(--accent);color:#fff;border-color:var(--accent)}
+  .chip.warm{background:var(--gold);color:#fff;border-color:var(--gold)}
+
+  .closing{background:linear-gradient(180deg,var(--paper-2),var(--paper));border:1px solid var(--rule);border-radius:6px;padding:1.4rem 1.5rem;margin-top:.5rem}
+  .closing h3{margin-top:0}
+
+  footer{max-width:1180px;margin:2rem auto 0;padding:1.5rem 1.25rem;border-top:1px solid var(--rule);font-size:.78rem;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+
+  /* MOBILE JUMP-NAV (replaces sidebar TOC on small screens) */
+  .mobnav{display:none}
+
+  @media (max-width:920px){
+    html{-webkit-text-size-adjust:100%}
+    body{padding-bottom:3rem}
+    /* topbar: context read once — don't let it eat the viewport, make it one scrollable line */
+    .topbar{position:static}
+    .topbar-inner{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;gap:.55rem;padding:.5rem .9rem;font-size:.72rem;scrollbar-width:none}
+    .topbar-inner::-webkit-scrollbar{display:none}
+    .topbar-inner > span{white-space:nowrap;flex:0 0 auto}
+
+    .page{padding:1.1rem 1rem 0}
+    .masthead{gap:.75rem;margin-bottom:1.25rem}
+    .masthead .meta{text-align:left}
+
+    .mobnav{display:block;position:sticky;top:0;z-index:15;margin:0 0 1.25rem;background:var(--paper);border:1px solid var(--rule);border-radius:6px;box-shadow:var(--shadow)}
+    .mobnav summary{cursor:pointer;list-style:none;padding:.72rem 1rem;font-family:'JetBrains Mono',monospace;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);display:flex;justify-content:space-between;align-items:center}
+    .mobnav summary::-webkit-details-marker{display:none}
+    .mobnav summary::after{content:"\25BE";transition:transform .2s ease}
+    .mobnav[open] summary::after{transform:rotate(180deg)}
+    .mobnav ol{list-style:none;margin:0;padding:.1rem .5rem .65rem;counter-reset:mn;columns:2;column-gap:.75rem;border-top:1px solid var(--rule-soft)}
+    .mobnav li{counter-increment:mn;margin:.12rem 0;break-inside:avoid}
+    .mobnav a{display:block;padding:.4rem .5rem;color:var(--ink-soft);text-decoration:none;font-size:.84rem;border-radius:4px;border-bottom:none;line-height:1.3}
+    .mobnav a:active{background:var(--paper-2)}
+    .mobnav a::before{content:counter(mn,decimal-leading-zero)"  ";color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:.66rem}
+
+    section{padding:1.5rem 0 1.6rem;scroll-margin-top:3.5rem}
+    section h2{margin-bottom:.75rem}
+    section p,section ul,section ol,section li{max-width:none}
+    section{overflow-wrap:break-word}
+    .facts .v{font-size:1rem}
+  }
+
+  /* PORTFOLIO TABLE → stacked cards on phones (no horizontal swipe) */
+  @media (max-width:680px){
+    table{font-size:.9rem}
+    table thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+    table,table tbody,table tr,table td{display:block;width:100%}
+    table tr{background:#fff;border:1px solid var(--rule);border-radius:6px;padding:.45rem 1rem;margin:0 0 .85rem;box-shadow:var(--shadow)}
+    table td{border-bottom:1px solid var(--rule-soft);padding:.55rem 0;white-space:normal}
+    table td:last-child{border-bottom:none}
+    table td.num{white-space:normal}
+    table td::before{content:attr(data-label);display:block;font-family:'JetBrains Mono',monospace;font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:.25rem}
+  }
+
+  @media print{
+    body{background:#fff;color:#000;font-size:11pt}
+    .topbar,nav.toc,footer{display:none}
+    .layout{grid-template-columns:1fr}
+    section{break-inside:avoid;page-break-inside:avoid;border-bottom:1px solid #ccc;padding:1rem 0}
+    .qlist > li,.alist > li{break-inside:avoid;page-break-inside:avoid}
+    .card,.person,.org,.facts .f,.traps .col,.closing,.qlist .say,.strat .row{background:#fff;box-shadow:none}
+    a{color:#000;border-bottom:none}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <span><span class="pip"></span><strong>Live</strong>18 May 2026</span>
+    <span class="sep">·</span>
+    <span><strong>Counterpart</strong>Karolos Travassaros</span>
+    <span class="sep">·</span>
+    <span><strong>Title</strong>CPO · EGF (Emirates Growth Fund)</span>
+    <span class="sep">·</span>
+    <span><strong>Duration</strong>30 min</span>
+    <span class="sep">·</span>
+    <span><strong>Seat</strong>Chief of Staff &amp; PMO · Value Creation</span>
+  </div>
+</div>
+
+<div class="page">
+
+  <header class="masthead">
+    <div>
+      <div class="brand">Private Dossier · Interview Prep</div>
+      <h1>EGF · Emirates Growth Fund</h1>
+    </div>
+    <div class="meta">
+      Prepared <b>18 May 2026</b><br>
+      For Rishikesh Kulkarni's eyes only<br>
+      Sources: egf.gov.ae, The National, Zawya, Clifford&nbsp;Chance, MIITE&nbsp;2026 coverage, u.ae
+    </div>
+  </header>
+
+  <details class="mobnav">
+    <summary>Jump to section</summary>
+    <ol>
+      <li><a href="#glance">EGF at a glance</a></li>
+      <li><a href="#room">The room — Karolos</a></li>
+      <li><a href="#org">Org &amp; team</a></li>
+      <li><a href="#role">The role</a></li>
+      <li><a href="#portfolio">Portfolio &amp; pipeline</a></li>
+      <li><a href="#strategies">National strategies</a></li>
+      <li><a href="#whatjusthappened">MIITE 2026</a></li>
+      <li><a href="#bgf">BGF lineage</a></li>
+      <li><a href="#likely">Likely questions</a></li>
+      <li><a href="#ask">Questions to ask back</a></li>
+      <li><a href="#traps">Credibility traps</a></li>
+      <li><a href="#vocab">Operating vocabulary</a></li>
+      <li><a href="#closing">Closing move</a></li>
+    </ol>
+  </details>
+
+  <div class="layout">
+
+    <nav class="toc" aria-label="Table of contents">
+      <ol>
+        <li><a href="#glance">EGF at a glance</a></li>
+        <li><a href="#room">The room — Karolos</a></li>
+        <li><a href="#org">Org &amp; team</a></li>
+        <li><a href="#role">The role you're interviewing for</a></li>
+        <li><a href="#portfolio">Portfolio &amp; pipeline</a></li>
+        <li><a href="#strategies">National strategies EGF plugs into</a></li>
+        <li><a href="#whatjusthappened">What just happened — MIITE 2026</a></li>
+        <li><a href="#bgf">Hidden context: the BGF lineage</a></li>
+        <li><a href="#likely">Likely questions — with full answers</a></li>
+        <li><a href="#ask">Questions to ask back</a></li>
+        <li><a href="#traps">Credibility traps</a></li>
+        <li><a href="#vocab">Operating vocabulary</a></li>
+        <li><a href="#closing">Closing move</a></li>
+      </ol>
+    </nav>
+
+    <main>
+
+      <!-- 1 GLANCE -->
+      <section id="glance">
+        <div class="label"><span class="num">01</span><span class="tag">Org snapshot</span></div>
+        <h2>EGF at a glance</h2>
+        <p>EGF is the UAE's flagship federal growth-equity platform — exactly <b>one year old as of this month</b>. AED 1B mandate, backed by EDB (Emirates Development Bank). Active minority investor in SMEs across four national-priority sectors. The thesis is the <em>"missing middle"</em>: companies too big for VC, too entrepreneurial for traditional PE.</p>
+
+        <div class="facts">
+          <div class="f"><div class="k">Launched</div><div class="v">May 2025<small>1-year mark celebrated 4–7 May at MIITE</small></div></div>
+          <div class="f"><div class="k">Fund size</div><div class="v">AED 1 Bn<small>~USD 272M</small></div></div>
+          <div class="f"><div class="k">Backer</div><div class="v">EDB<small>Federal — UAE government</small></div></div>
+          <div class="f"><div class="k">Ticket</div><div class="v">AED 10–50M<small>per company</small></div></div>
+          <div class="f"><div class="k">Target rev.</div><div class="v">AED 10M+<small>SMEs, UAE-HQ'd</small></div></div>
+          <div class="f"><div class="k">Stake</div><div class="v">Active minority<small>Founders retain control</small></div></div>
+          <div class="f"><div class="k">Funding gap</div><div class="v">AED 7 Bn<small>UAE SME equity gap EGF cites</small></div></div>
+          <div class="f"><div class="k">Sectors</div><div class="v">Industry · Food · Health · AdvTech<small>"Non-oil real economy"</small></div></div>
+        </div>
+
+        <h3>The five value-creation pillars (EGF's own framing)</h3>
+        <ol>
+          <li><b>Strategic guidance</b> — board-level direction and thesis sharpening</li>
+          <li><b>Institutionalization &amp; governance</b> — turning founder-led companies into board-led ones</li>
+          <li><b>Operational excellence</b> — KPIs, finance function, cadence</li>
+          <li><b>Market access</b> — opening doors via the EDB and federal network</li>
+          <li><b>Talent access</b> — placing senior operators into portfolio companies</li>
+        </ol>
+
+        <div class="callout"><div class="kicker">Anchor</div><p>EGF isn't a generic growth fund — it is an <b>industrial-policy instrument</b>. Operation 300bn (the UAE's strategy to grow industrial GDP to AED 300bn by 2031) and the ICV (In-Country Value) programme are upstream. Treat every conversation as laddering up to that, not to "returns" in isolation. The full strategy map is in §06.</p></div>
+      </section>
+
+      <!-- 2 KAROLOS -->
+      <section id="room">
+        <div class="label"><span class="num">02</span><span class="tag">The room</span></div>
+        <h2>Karolos Travassaros — who you're actually talking to</h2>
+
+        <div class="person">
+          <div class="nm">Karolos Travassaros</div>
+          <div class="ti">CPO · EGF · since July 2025</div>
+          <div class="bd">
+            Greek national. Joined EGF at the formation layer — was <em>Advisor to the Board of EDB</em> while EGF was being incubated (Apr 2021 – Jul 2025), and concurrently <em>Advisor to the CEO of ADNOC Group</em>. Before that: ~10 years at <b>BCG</b> (Partner → Principal → Project Leader → Consultant), specializing in financial services, PE and SWFs. Earlier career in M&amp;A (mergers and acquisitions) investment banking — <b>Deutsche Bank</b> (Greek market) and <b>Rothschild &amp; Co</b>. Briefly served in the Hellenic Army Ordnance Corps in financial resource management.
+          </div>
+          <div class="bd">
+            <b>Education:</b> MSc Finance &amp; Economics, LSE (London School of Economics) · BSc Finance &amp; Accounting, Athens University of Economics and Business.
+          </div>
+        </div>
+
+        <h3>What this means for your 30 minutes</h3>
+        <ul>
+          <li><b>He is BCG-trained.</b> He will test for structured thinking. Pyramid-principle answers (top-line claim → 2–3 supporting reasons → evidence), not stream-of-consciousness. If he asks a question and you don't know — say <em>"let me think about that out loud"</em> and build top-down.</li>
+          <li><b>He has board-advisor and ADNOC-advisor pattern.</b> He has worked alongside founders and senior principals at the highest level in the UAE. He will value <em>discretion</em>, <em>judgment under ambiguity</em>, and <em>knowing when not to send the deck</em>.</li>
+          <li><b>He just stood up this function.</b> EGF's Portfolio Operations org is months old. You are not joining a machine — you are helping <em>build</em> it. He needs an operator, not a process administrator.</li>
+          <li><b>Greek + UAE + BCG + sovereign wealth = pragmatic generalist.</b> He will switch register quickly. Match him.</li>
+          <li><b>He spoke at SuperReturn Middle East in 2025.</b> He is the public face of EGF Portfolio Operations. He cares about narrative — yours and the fund's.</li>
+        </ul>
+
+        <div class="callout"><div class="kicker">Read on him</div><p>Themes he is statistically likely to probe: <b>operating cadence</b> (weekly portfolio reviews, escalation rules), <b>governance build-out</b> (he is wiring this from scratch), <b>cross-functional orchestration</b> (Value Creation + Partnerships + PR + PMO all roll up to him — coordination IS the job), and <b>operator vs. consultant instinct</b> (he has both — he wants <em>you</em> to have the operator one).</p></div>
+      </section>
+
+      <!-- 3 ORG -->
+      <section id="org">
+        <div class="label"><span class="num">03</span><span class="tag">Map of the room</span></div>
+        <h2>Org &amp; the team you're joining</h2>
+
+        <h3>Board</h3>
+        <ul>
+          <li><b>H.E. Dr. Ahmad Belhoul Al Falasi</b> — Chairman · UAE Minister of Sports (formerly Minister of Higher Education, of Government Development, etc — a senior multi-portfolio minister)</li>
+          <li><b>H.E. Najla Ahmed Al Midfa</b> — Vice Chair &amp; Managing Director · prominent UAE entrepreneur-ecosystem figure (ex-Sheraa / Sharjah Entrepreneurship Center)</li>
+          <li><b>H.E. Mariam Saeed Ghobash</b> — Board Member</li>
+          <li><b>Stephen Welton</b> — Board Member · <em>founder of BGF (Business Growth Fund) in the UK</em>. This matters — see §08.</li>
+          <li><b>H.E. Khalfan Juma Belhoul</b> — Board Member · CEO of Dubai Future Foundation</li>
+          <li><b>H.E. Mohammed AlHuraimel Al Shamsi</b> — Board Member</li>
+          <li><b>H.E. Dr. Hassan AlSayegh</b> — Board Member</li>
+        </ul>
+
+        <h3>Executive</h3>
+        <ul>
+          <li><b>Khalifa Al Hajeri</b> — CEO, since Oct 2025. 15+ yrs at Mubadala — last role: Senior Principal for Growth Investments. MBA, IESE Business School (Spain).</li>
+          <li><b>Karolos Travassaros</b> — CPO — your interviewer.</li>
+          <li><b>Matthew Singh</b> — CIO (Chief Investment Officer) · ex-<em>BGF UK</em> head of investments, ex-EY (Ernst &amp; Young) Transaction Support; ICAS Chartered Accountant; BSc MORSE (Mathematics, Operational Research, Statistics &amp; Economics), Warwick.</li>
+        </ul>
+
+        <h3>The slice of the org you'd be working inside</h3>
+        <div class="org">CEO  Khalifa Al Hajeri
+ │
+ ├── CIO  Matthew Singh ──── Investment team
+ │                            (deal sourcing, execution)
+ │
+ └── <span class="him">CPO  Karolos Travassaros</span>
+       │
+       ├── Value Creation     ◄── led by <span class="her">Giacomo Martinelli Bellaviti Buttoni</span>
+       │     │                    (ex-Columbia Business School 2024–25;
+       │     │                     5-language Italian investment pro;
+       │     │                     focus: investment decisions + Value Creation)
+       │     │
+       │     └── <span class="you">Chief of Staff &amp; PMO</span>  ◄── YOU
+       │
+       ├── Partnerships
+       │     (MoUs with MoET, MoIAT, ADNOC,
+       │      KEZAD, Sharjah Chamber, Hub71, EDB)
+       │
+       ├── Marketing &amp; PR
+       │     (SuperReturn ME, MIITE 2026, "Capital that grows with you")
+       │
+       └── PMO
+             (cross-portfolio governance, cadence, reporting)</div>
+
+        <div class="callout"><div class="kicker">Important nuance</div><p>The role is described as both <b>Chief of Staff to Karolos</b> AND <b>PMO inside Giacomo's Value Creation team</b>. That dual reporting is the role's superpower — and its main political risk. Name this in the interview. Don't pretend the ambiguity isn't there.</p></div>
+      </section>
+
+      <!-- 4 ROLE -->
+      <section id="role">
+        <div class="label"><span class="num">04</span><span class="tag">Job-to-be-done</span></div>
+        <h2>The role: Chief of Staff &amp; PMO inside Value Creation</h2>
+        <p>This is not a "manage Karolos's calendar" role. At a fund this young, this seat owns the operating system of Portfolio Operations. What that means concretely:</p>
+        <ol>
+          <li><b>Leadership material.</b> Prep Board, IC (Investment Committee) and ExCo (Executive Committee) decks. Translate Giacomo's portfolio diagnostics + Karolos's strategic framing into 6-page documents (not 60-slide decks).</li>
+          <li><b>Cross-portfolio visibility.</b> One source of truth for what is happening across Tarmeem, CarniStore, and every future portfolio company — value-creation plan progress, KPI movement, board issues, escalations.</li>
+          <li><b>Cadence design.</b> Weekly portfolio review. Monthly portfolio-company scorecard. Quarterly portfolio board pack. 100-day-plan tracking for each new investment.</li>
+          <li><b>Prioritization.</b> When the Value Creation team has 9 portfolio companies and 30 levers, which 5 get attention this quarter? You frame the trade-off.</li>
+          <li><b>Stakeholder management.</b> Karolos owns four teams (Value Creation, Partnerships, PR, PMO). You are the connective tissue. You will spend real time with the EDB and ministry interfaces.</li>
+          <li><b>NCP (National Champions Programme) secretariat.</b> The NCP is a trilateral with MoIAT (Ministry of Industry and Advanced Technology) and MoET (Ministry of Economy and Tourism) — it needs PMO discipline or it collapses into a PR exercise.</li>
+          <li><b>Decision-velocity engine.</b> A good PMO speeds decisions; a bad one creates status reports. Be clear on which kind you are.</li>
+          <li><b>Talent-placement support.</b> EGF's value-creation pillar #5 is talent — you'll likely orchestrate operator placements into portfolio companies.</li>
+          <li><b>Exit-readiness rhythm.</b> Even at year 1, exit posture starts. Data rooms, audit-readiness, governance hygiene.</li>
+          <li><b>Be the operator they trust with the awkward conversation.</b> The unsaid sentence in every Chief of Staff job description.</li>
+        </ol>
+      </section>
+
+      <!-- 5 PORTFOLIO -->
+      <section id="portfolio">
+        <div class="label"><span class="num">05</span><span class="tag">The portfolio</span></div>
+        <h2>Portfolio &amp; pipeline</h2>
+        <p>Two announced investments. Both are flagship-quality sector openers — healthcare and food security. Expect more deals to land through 2H (second half) 2026 as the NCP pipeline matures. Each portfolio company ladders up to a specific federal strategy — that linkage is non-negotiable for EGF and worth referencing by name.</p>
+
+        <table>
+          <thead><tr><th>#</th><th>Company</th><th>Sector</th><th>Date</th><th class="num">Ticket</th><th>Status</th><th>Why it matters · what it ladders to</th></tr></thead>
+          <tbody>
+            <tr>
+              <td class="num" data-label="#">01</td>
+              <td data-label="Company"><b>Tarmeem Healthcare Holding</b><br><small style="color:var(--muted)">Co-founded by Dr. Ali &amp; Dr. Omar Al Suwaidi · Abu Dhabi-HQ · 20K+ patients/yr · doubling footprint over 18 mo</small></td>
+              <td data-label="Sector">Healthcare — orthopaedics &amp; spine</td>
+              <td class="num" data-label="Date">Sep 2025</td>
+              <td class="num" data-label="Ticket">Undisclosed</td>
+              <td data-label="Status"><span class="chip live">Live</span></td>
+              <td data-label="Why it matters · ladders to">First-ever EGF investment. Advised by Clifford Chance. Signals sector-builder thesis, not opportunistic.<br><span class="ladder">Ladders to · We the UAE 2031 — top-10 healthcare</span></td>
+            </tr>
+            <tr>
+              <td class="num" data-label="#">02</td>
+              <td data-label="Company"><b>CarniStore</b><br><small style="color:var(--muted)">Founded 2018 · Dubai-HQ · online premium butchery + smokehouse · "anchoring premium protein"</small></td>
+              <td data-label="Sector">Food — premium protein</td>
+              <td class="num" data-label="Date">Apr 2026</td>
+              <td class="num" data-label="Ticket">AED 45M</td>
+              <td data-label="Status"><span class="chip live">Live</span></td>
+              <td data-label="Why it matters · ladders to">First food-sector deal. Direct hit on food-security mandate. ~USD 12.25M strategic minority.<br><span class="ladder">Ladders to · National Food Security Strategy 2051</span></td>
+            </tr>
+            <tr>
+              <td class="num" data-label="#">03</td>
+              <td data-label="Company"><b>NCP (National Champions Programme)</b><br><small style="color:var(--muted)">Trilateral platform — not a deal. Pipeline mechanism for manufacturing SMEs</small></td>
+              <td data-label="Sector">Manufacturing pipeline platform</td>
+              <td class="num" data-label="Date">May 2026</td>
+              <td class="num" data-label="Ticket">—</td>
+              <td data-label="Status"><span class="chip warm">Just launched</span></td>
+              <td data-label="Why it matters · ladders to">Trilateral with MoIAT + MoET. Not a deal — the funnel for the next 10 deals.<br><span class="ladder">Ladders to · Operation 300bn + ICV</span></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="callout"><div class="kicker">Talking point</div><p>Two deals in 12 months is <b>deliberate, not slow</b>. At AED 10–50M tickets and a five-pillar value-creation model that demands hands-on engagement, a young Portfolio Operations team can responsibly absorb maybe 4–6 actives in year 1. The discipline is the story.</p></div>
+      </section>
+
+      <!-- 6 STRATEGIES -->
+      <section id="strategies">
+        <div class="label"><span class="num">06</span><span class="tag">The macro EGF ladders to</span></div>
+        <h2>National strategies EGF plugs into</h2>
+        <p>EGF doesn't do growth equity in a vacuum. Every portfolio company ladders up to a specific federal strategy with a named target year and named owner ministry. Knowing the map signals you understand <em>why</em> the fund exists — not just <em>what</em> it does.</p>
+
+        <div class="strat">
+
+          <div class="row">
+            <div class="nm">Operation 300bn<small>MoIAT · target 2031</small></div>
+            <div class="body">
+              <p><b>What it is:</b> Grow industrial sector contribution to UAE GDP from AED 133bn to <b>AED 300bn by 2031</b>; build 13,500 industrial SMEs; raise industrial R&amp;D to 2% of GDP. EDB has allocated AED 30bn over five years as the financing arm.</p>
+              <p><b>EGF's role:</b> The federal growth-equity instrument for this. Sits underneath EDB. The NCP is the explicit funnel.</p>
+              <div class="hits"><span class="pc">NCP</span><span class="pc">Industrial Resilience Agreement</span><span class="pc">Future manufacturing portfolio companies</span></div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="nm">National Food Security Strategy 2051<small>Ministry of Climate Change &amp; Env · target 2051</small></div>
+            <div class="body">
+              <p><b>What it is:</b> UAE #1 on the Global Food Security Index by 2051. Five objectives — diversify supply sources, expand local production (smart farming, hydroponics, vertical farming), reduce food waste, strengthen value chain, mitigate risk.</p>
+              <p><b>EGF's role:</b> Equity into private-sector food champions building the local production base. CarniStore is the inaugural deal under this strategy.</p>
+              <div class="hits"><span class="pc">CarniStore</span></div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="nm">"We the UAE 2031" — Healthcare<small>Federal vision · target 2031</small></div>
+            <div class="body">
+              <p><b>What it is:</b> UAE in the global <b>top 10 for healthcare quality</b> by 2031. Healthcare-services localization. Federal Decree-Law 38/2024 consolidated drug regulation to attract R&amp;D and biotech investment.</p>
+              <p><b>EGF's role:</b> Equity into domestic specialty providers reducing outbound medical tourism. Tarmeem is the wedge.</p>
+              <div class="hits"><span class="pc">Tarmeem</span></div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="nm">ICV (In-Country Value) programme<small>ADNOC · ongoing</small></div>
+            <div class="body">
+              <p><b>What it is:</b> ADNOC's localization mandate — routes procurement spend toward UAE-based suppliers, scores them on local-value contribution. The largest single offtake/localization mechanism in the country.</p>
+              <p><b>EGF's role:</b> The Industrial Resilience Agreement (signed at MIITE 2026, see §07) plugs portfolio manufacturing companies directly into ADNOC's supplier ecosystem. This is the single most valuable distribution channel EGF can offer a portfolio company.</p>
+              <div class="hits"><span class="pc">Future manufacturing deals</span><span class="pc">NCP pipeline</span></div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="nm">UAE National AI Strategy 2031 + Agentic AI mandate<small>Federal &amp; Dubai · target 2028</small></div>
+            <div class="body">
+              <p><b>What it is — federal:</b> 23 April 2026 — UAE Cabinet directive that <b>50% of federal government services run on autonomous AI agents by 2028</b>. <b>What it is — Dubai:</b> 4 May 2026 (the same day MIITE opened) — Crown Prince Sheikh Hamdan launched a <b>two-year mandate for Dubai's entire private sector to adopt agentic AI</b>, with training tracks via Dubai Chamber of Commerce, government-funded incubators, and dedicated investment funds.</p>
+              <p><b>EGF's role — and why this matters for the interview:</b> No public position yet. But CarniStore is Dubai-HQ — so portfolio companies are directly subject to the Dubai mandate. A new "AI readiness" lens almost certainly has to enter the value-creation playbook: due-diligence pre-investment, operational lever post-investment, board-level reporting after. This is one of the freshest, most-relevant questions you can put to Karolos. See §10 Q05.</p>
+              <div class="hits"><span class="pc">CarniStore (Dubai)</span><span class="pc">All future Dubai portfolio companies</span><span class="pc">EGF's internal operating model</span></div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="callout"><div class="kicker">Pattern to notice</div><p>Every strategy has a <b>target year</b>, a <b>named ministry/sponsor</b>, and a <b>measurable goal</b>. That's the UAE policy idiom. When you refer to a strategy in the interview, use the same shape — <em>"Operation 300bn, MoIAT, AED 300bn by 2031"</em> beats <em>"the industrial plan"</em> every time.</p></div>
+      </section>
+
+      <!-- 7 WHAT JUST HAPPENED -->
+      <section id="whatjusthappened">
+        <div class="label"><span class="num">07</span><span class="tag">12 days ago</span></div>
+        <h2>What just happened — MIITE 2026 (4–7 May)</h2>
+        <p>You are walking in <b>two weeks after the biggest moment in EGF's history</b>. Reference it. Karolos will be living and breathing it.</p>
+        <ul>
+          <li><b>NCP (National Champions Programme) launched</b> — trilateral with MoIAT &amp; MoET to systematically scale UAE manufacturing SMEs into globally competitive champions. Capital + governance + market access bundled.</li>
+          <li><b>Industrial Resilience Agreement</b> — trilateral between EGF, MoIAT and <b>ADNOC</b>. Opens ADNOC's industrial supply chain (via the ICV programme) to scaled UAE manufacturers. Massive offtake potential for portfolio companies.</li>
+          <li><b>MoU with Sharjah Chamber of Commerce</b> — expanded SME financing &amp; support pathways.</li>
+          <li><b>MoU with KEZAD (Khalifa Economic Zones Abu Dhabi) Group</b> (signed Jan 2026) — industrial real-estate + ecosystem access.</li>
+          <li><b>MoU with MoET</b> — global market access for portfolio SMEs.</li>
+          <li><b>EGF named MIITE 2026 Capital Partner</b> — public anointment as the federal growth-equity face of UAE manufacturing.</li>
+          <li><b>Collaborative agreements with UAE banks</b> — to bundle equity + debt access for portfolio companies. Solves a real growth-stage SME pain point.</li>
+        </ul>
+        <p>Three ministers personally backed the EGF agenda at MIITE: <b>Dr. Sultan Al Jaber</b> (MoIAT &amp; ADNOC Group CEO), <b>Abdulla Bin Touq Al Marri</b> (MoET), and the Chair <b>Ahmad Belhoul Al Falasi</b>. The political air cover is unusually heavy.</p>
+        <div class="callout"><div class="kicker">Quote to know</div><p>Khalifa Al Hajeri at MIITE close (8 May): <em>"The partnerships we have formalised, the programme we have launched, and the commitments we have made alongside MoIAT and ADNOC are all aimed at supporting UAE manufacturers with real potential to become national champions."</em> The phrase "national champions" is the CEO's current language — use it back.</p></div>
+        <div class="callout"><div class="kicker">Same-week parallel</div><p>4 May 2026 was a <em>double</em> opening day: MIITE 2026 launched in Abu Dhabi, and Sheikh Hamdan launched the Dubai private-sector agentic AI mandate in Dubai. Two emirates, two industrial-policy moves, same week. Worth noticing — and worth asking Karolos how EGF threads both. See §06 + §10 Q05.</p></div>
+      </section>
+
+      <!-- 8 BGF -->
+      <section id="bgf">
+        <div class="label"><span class="num">08</span><span class="tag">Useful background — not for asking</span></div>
+        <h2>Hidden context: the BGF (Business Growth Fund) lineage</h2>
+        <p>EGF is structurally a UAE adaptation of the UK's <b>BGF (Business Growth Fund)</b>, a £3bn growth-equity platform launched in 2011 by the major UK banks alongside the government. The evidence:</p>
+        <ul>
+          <li><b>Stephen Welton</b> — founder of BGF — sits on the EGF board.</li>
+          <li><b>Matthew Singh</b> — EGF's CIO — came directly from BGF, where he led investments from 2015.</li>
+          <li>Same playbook: government/bank-backed, minority equity, "patient capital", growth-stage SMEs, sector-priority focus, governance-first value creation.</li>
+          <li>BGF is the world's most-active growth investor by deal volume — over 600 investments since 2011 — so the model is battle-tested.</li>
+        </ul>
+        <div class="callout"><div class="kicker">How to handle this in the interview</div><p>Don't lead with it and don't ask Karolos about it as a "smart question" — at the Chief of Staff / PMO level he's hiring an operator, not a fund-strategy analyst, and structural lineage questions can read as <em>"I'm evaluating you back."</em></p><p>BUT — keep it in your back pocket. If he himself mentions BGF, Stephen Welton, Matthew, or the model lineage, you can say: <em>"Yes — I noticed Stephen's on the board and Matthew came from there. The active-minority + sector-priority pattern reads very BGF-flavoured. Is that a deliberate model choice or did the team converge there independently?"</em> That's an <em>"if it comes up"</em> question, not a planted one.</p></div>
+      </section>
+
+      <!-- 9 LIKELY Q -->
+      <section id="likely">
+        <div class="label"><span class="num">09</span><span class="tag">What Karolos will ask</span></div>
+        <h2>Likely questions — with full answers</h2>
+        <p>Each question below gives you (1) literally what to say, (2) why it works at this seat, and (3) the pitfall to avoid. Memorize the shape, not the words.</p>
+
+        <ol class="qlist">
+
+          <li><div>
+            <p class="q">Walk me through your background.</p>
+            <p class="say">There's a throughline in my career that maps directly onto this seat. I'm an operator who's spent the last [N] years [building / scaling / fixing] [P&amp;L-shaped thing]. The shift in the middle of my career was from owning one P&amp;L (Profit &amp; Loss) to orchestrating across several — which is when I learned that translating principal intent into portfolio-wide execution is its own discipline. That's the work I want to do at EGF.</p>
+            <div class="meta"><span class="lbl">Why</span><p>Karolos is BCG-trained. He listens for <b>structure</b>. Opening with the throughline (operator → orchestrator) and then plugging into the seat tells him in 30 seconds: "this person can sequence." A chronological CV recital ("First I worked at…") loses him by sentence two.</p></div>
+            <div class="meta"><span class="lbl avoid">Avoid</span><p>Filling 5 minutes. Aim for <b>90 seconds</b>. Land it and pause — let him direct where he wants the depth.</p></div>
+          </div></li>
+
+          <li><div>
+            <p class="q">Why EGF? Why now?</p>
+            <p class="say">Three reasons, in order. First, the <b>stage</b>: EGF is one year old this month — Portfolio Operations is being wired, not run. Joining at the operating-system layer is rare. Second, the <b>mandate</b>: this isn't a generic growth fund chasing returns — it's an industrial-policy instrument laddering up to Operation 300bn and ICV. The "why" is unusually clear. Third, the <b>seat</b>: a Chief of Staff &amp; PMO sitting at the intersection of investment thesis and operating discipline is the role I've been building toward. Either side alone is common — both is the multiplier.</p>
+            <div class="meta"><span class="lbl">Why</span><p>Three structured reasons = BCG points. Each reason is about <b>EGF</b>, not you. The closing line ("both is the multiplier") names what makes the role different — that's the framing Karolos uses internally.</p></div>
+            <div class="meta"><span class="lbl avoid">Avoid</span><p>"I love growth funds" or "I want to work in the UAE." Both are about you. Don't say either.</p></div>
+          </div></li>
+
+          <li><div>
+            <p class="q">What does a Chief of Staff actually do, in your view?</p>
+            <p class="say">Three things, and they're all multipliers — not administration. First, <b>force multiplier for the principal</b>: I take what's in your head and make it real across four teams without you having to repeat yourself. Second, <b>decision accelerant</b>: I shorten the time between a decision needing to be made and it actually being made — that means clear pre-reads, clear options, clear owners. Third, <b>discreet operator</b>: I handle the awkward conversation you don't have time to have, and I never make you find out from someone else. The PMO is the tool I use to do all of this — it's not the job.</p>
+            <div class="meta"><span class="lbl">Why</span><p>Karolos will hire the candidate who explicitly <b>rejects the gatekeeper / calendar-manager framing</b>. The "PMO is a tool, not the job" line is quote-worthy — say it. "Decision accelerant" is the highest-status framing of this role; it tells him you understand the seat's leverage.</p></div>
+            <div class="meta"><span class="lbl avoid">Avoid</span><p>Talking about meetings, calendars, prioritizing his inbox. That's an EA (Executive Assistant), not a Chief of Staff.</p></div>
+          </div></li>
+
+          <li><div>
+            <p class="q">How is value creation different from consulting?</p>
+            <p class="say">Skin in the game and time horizon. A consultant leaves at the end of the slide deck — value creation lives with the consequences for three to seven years. That changes everything. The portfolio CEO is your <em>colleague</em>, not your client. You're accountable for the EBITDA (Earnings Before Interest, Tax, Depreciation, Amortization) line, not the recommendation. And you sit through the J-curve with them — which builds a different kind of trust than a project relationship ever can. That's the part of the work I find most interesting.</p>
+            <div class="meta"><span class="lbl">Why</span><p>Karolos was at BCG for a decade. He <b>was</b> the consultant. He's testing whether you understand the actual delta — which is ownership and time, not vocabulary. The "colleague not client" frame lands because it's how he now experiences the work.</p></div>
+            <div class="meta"><span class="lbl avoid">Avoid</span><p>Trashing consultants. He was one. Show you understand the value of structured thinking — but make the point that <em>ownership</em> is the differentiator.</p></div>
+          </div></li>
+
+          <li><div>
+            <p class="q">Tell me about a portfolio company (or business unit) you helped turn around.</p>
+            <p class="say">[Your story — fill in with one specific case. Structure it as: <b>Situation</b> (one sentence on what was broken — name the metric), <b>Lever</b> (the one thing you changed, with mechanism), <b>Resistance</b> (who pushed back and how you handled it — don't skip this), <b>Outcome</b> (the metric, with a number, and the time horizon).] Total: 90 seconds.</p>
+            <div class="meta"><span class="lbl">Why</span><p>Karolos will judge this on <b>active verbs</b>, <b>numbers</b>, and whether you mention <b>resistance</b>. Most candidates skip resistance because it's uncomfortable — but the resistance moment is where the operator-vs-consultant distinction shows. Name what was hard, name what you did about it.</p></div>
+            <div class="meta"><span class="lbl avoid">Avoid</span><p>"We drove alignment." "We aligned stakeholders." Passive-voice consulting verbs. Replace with: "I sat with the CFO every Friday for six weeks until the cash forecast was clean."</p></div>
+          </div></li>
+
+          <li><div>
+            <p class="q">You'd be supporting Giacomo's Value Creation roadmap AND running PMO discipline across Partnerships and PR. How do you actually prioritize across those?</p>
+            <p class="say">Three mechanisms. First, <b>WIP (Work In Progress) limits</b>: at any moment I'd cap the active portfolio-company initiatives — say four to six — and force the team to finish before starting. Second, <b>escalation triggers</b>: explicit, written rules for when something pops to you versus when I hold it. "If a portfolio CEO is two weeks past a commitment, that's mine. If it's two months, that's yours." Third, a <b>weekly 15-minute reframe with you</b> where we look at what's in flight, what should drop, and what's missing. The prioritization isn't the hard part — the discipline to actually cut things is.</p>
+            <div class="meta"><span class="lbl">Why</span><p>This question is testing whether you have <b>mechanisms</b> or just opinions. Naming WIP limits, escalation triggers, and a recurring reframe sounds like an operator who has run this before. The throwaway line "the discipline to actually cut things" signals you've felt the failure mode.</p></div>
+            <div class="meta"><span class="lbl avoid">Avoid</span><p>Naming a tool (Asana, Monday, Notion, Linear). Junior. Name a <b>mechanism</b>, not software.</p></div>
+          </div></li>
+
+          <li><div>
+            <p class="q">A portfolio CEO is stonewalling the value-creation playbook. What do you do?</p>
+            <p class="say">First move: diagnose. Is this <b>intent</b> or <b>capacity</b>? Intent means they disagree with the playbook — capacity means they agree but can't execute. Different problems. If it's intent: I'd schedule a 1:1 without the deck, get genuinely curious about <em>their</em> thesis on what's blocking growth, and look for the overlap between their view and ours. If it's capacity: find the missing resource — a CFO, a head of commercial, a fractional operator. What I would <em>not</em> do is go around the CEO to the board on the first move. That's a one-shot weapon and you only use it when nothing else worked.</p>
+            <div class="meta"><span class="lbl">Why</span><p>"Intent versus capacity" is a senior diagnostic. Most candidates jump to action; you're framing the problem first. The "go around the CEO to the board" comment shows you understand portfolio governance politics — that single sentence buys you a lot of credibility.</p></div>
+            <div class="meta"><span class="lbl avoid">Avoid</span><p>"I'd present the data and convince them." Founders aren't moved by decks — they're moved by trust, incentives, and being heard. The portfolio CEO has <em>their</em> investors too — never forget you're a minority holder.</p></div>
+          </div></li>
+
+          <li><div>
+            <p class="q">Walk me through IRR vs MOIC vs DPI. Which matters most here?</p>
+            <p class="say">They tell different stories to different audiences. IRR (Internal Rate of Return) is time-weighted — it makes a 2x in two years look much better than a 3x in seven. It's the LP (Limited Partner) presentation number. MOIC (Multiple on Invested Capital) is the absolute return — total value over cost — and it ignores time. DPI (Distributions to Paid-In) is the only one that's actually cash returned. For EGF specifically: this is patient capital with a federal backer, you're explicitly <em>not</em> optimizing IRR — so MOIC and TVPI (Total Value to Paid-In) are the right reportables in the J-curve years, and DPI is the truth at exit. The fund's brand promise — "capital that grows with you" — only works if you're MOIC-led, not IRR-led.</p>
+            <div class="meta"><span class="lbl">Why</span><p>This is the most technical question Karolos will ask, and the highest-leverage one to get exactly right. The connection from <em>"patient capital"</em> to <em>"not optimizing IRR"</em> is the move — most candidates name the three metrics but don't tie them to EGF's actual posture.</p></div>
+            <div class="meta"><span class="lbl avoid">Avoid</span><p>Treating them as interchangeable. Or worse — saying "IRR is what matters" because that's the default PE answer. It's wrong for this fund.</p></div>
+          </div></li>
+
+          <li><div>
+            <p class="q">How would you build a 100-day plan for the next EGF acquisition?</p>
+            <p class="say">Three phases, in order: <b>stabilize, lock, set</b>. Days 1–30 stabilize: get cash forecasting clean, get monthly reporting on rails, lock the top relationships — bank, auditor, key customers — and make sure no one is leaving in the first 90 days who shouldn't. Days 30–60 lock: identify three value levers, no more. Each lever gets a metric, an owner, and a date. Days 60–100 set: install the operating cadence — weekly portfolio review with management, monthly scorecard to us, quarterly board pack. Strategy comes <em>last</em>, not first. CarniStore is probably still in this window — I'd want to know where it is in the arc.</p>
+            <div class="meta"><span class="lbl">Why</span><p>The order is the answer. Most candidates lead with strategy — wrong. <b>Stabilize-lock-set</b> is the proven sequence and naming it that way signals you've actually done a 100-day plan before. Closing with "CarniStore is probably in this window" shows live-fire awareness of the portfolio.</p></div>
+            <div class="meta"><span class="lbl avoid">Avoid</span><p>Strategy in days 1–30. Listing every workstream. A 100-day plan with 12 workstreams is a 0-day plan.</p></div>
+          </div></li>
+
+          <li><div>
+            <p class="q">What's a PMO you'd actually want to work in?</p>
+            <p class="say">A decision-velocity engine, not a status-report factory. Three signals of a good one: it kills more dashboards than it creates; the principal answers the phone on the first ring when the PMO lead calls; and the PMO is a little bit feared — because it's the function that asks the awkward question other people don't want to. If I'm in this seat and a year from now the team is generating more decisions per week and fewer slides per week than today, the PMO is working.</p>
+            <div class="meta"><span class="lbl">Why</span><p>"Decision-velocity engine, not status-report factory" is the line. Say it verbatim. The three signals make it concrete — and "the PMO is a little bit feared" is the senior-operator detail that most candidates won't say out loud.</p></div>
+            <div class="meta"><span class="lbl avoid">Avoid</span><p>"I love processes." Dead on arrival.</p></div>
+          </div></li>
+
+          <li><div>
+            <p class="q">Tell me about a time you disagreed with a principal or your CEO.</p>
+            <p class="say">[Your story.] Anchor the shape: I disagreed in private, brought data not opinion, gave them a clean option set rather than a single recommendation, and once they decided I committed in public — even when the decision wasn't the one I preferred. The outcome doesn't have to be "I was right." That's a brittle story. The stronger story is: we disagreed, the decision got made, the outcome wasn't perfect, and the trust survived.</p>
+            <div class="meta"><span class="lbl">Why</span><p>"Disagree in private, commit in public" is the senior frame. Karolos has worked alongside the ADNOC CEO and the EDB board — he knows what mature disagreement looks like. Picking a story where you "won by being loud" tells him you can't handle the room.</p></div>
+            <div class="meta"><span class="lbl avoid">Avoid</span><p>A story where you were right and the principal was wrong, dramatized for effect. He'll smell it.</p></div>
+          </div></li>
+
+          <li><div>
+            <p class="q">How do you coordinate across teams when you don't have direct authority?</p>
+            <p class="say">Three things make this work. First, <b>I make myself useful before I need to be useful</b> — I do the unglamorous work (clean pre-reads, follow-ups, getting the right people in the room) so that when I ask for something, I've already banked credit. Second, <b>I keep escalation visible</b> — the threat of going to the principal is a tool that loses its power the moment you actually use it; I rarely use it, which is why it works. Third, <b>I orient around the principal's actual priorities, not the org chart</b> — if Karolos cares about a portfolio company this quarter, that's what gets coordinated, regardless of which team formally owns it.</p>
+            <div class="meta"><span class="lbl">Why</span><p>This is THE core question for a Chief of Staff role and it's almost always asked. The three principles — be useful first, escalation as a sheathed weapon, orient on the principal — are senior. Most candidates answer this with "I build relationships" — vague and unactionable.</p></div>
+            <div class="meta"><span class="lbl avoid">Avoid</span><p>"I'm a strong communicator." Everyone says this. It's noise.</p></div>
+          </div></li>
+
+          <li><div>
+            <p class="q">How do you handle a portfolio company that's missing its plan?</p>
+            <p class="say">It depends on <em>how</em> it's missing. Three modes. <b>Pace miss</b> — revenue is growing but slower than projected: that's a forecasting problem, not a business problem; recalibrate the plan and move on. <b>Lever miss</b> — a specific initiative isn't working: diagnose whether it's the lever or the execution; if the lever is wrong, kill it before the team gets attached. <b>Trajectory miss</b> — the business model itself is broken: that's a board conversation, not a PMO conversation, and the right move is to surface it early and clean. The mistake junior PMOs make is treating all three the same way and putting everything in the same "amber" status.</p>
+            <div class="meta"><span class="lbl">Why</span><p>Three modes = structure. Naming "the same amber status" failure mode shows you've watched a real PMO turn into a process theatre. The "kill the lever before the team gets attached" line is operator language.</p></div>
+            <div class="meta"><span class="lbl avoid">Avoid</span><p>Generic "deep dive, root cause analysis, action plan" answers. That's a McKinsey deck, not a PMO move.</p></div>
+          </div></li>
+
+          <li><div>
+            <p class="q">What would your first 90 days in this seat look like?</p>
+            <p class="say">Same shape I'd use for a portfolio company. <b>Days 1–30 listen</b>: 1:1s with you, Giacomo, Matthew, the Partnerships and PR leads, the Tarmeem and CarniStore boards. Read every IC memo, every board pack, every value-creation plan that exists. Don't propose anything. <b>Days 30–60 diagnose</b>: write a 4-page memo for you on what the operating system actually looks like today versus what it needs to look like in 12 months. Identify three things that are broken and three things that are working but invisible. <b>Days 60–90 install</b>: a weekly portfolio review cadence, a monthly portfolio-company scorecard format, the NCP secretariat structure. Pick one thing to ship — not five. Ship it cleanly.</p>
+            <div class="meta"><span class="lbl">Why</span><p>This is almost certainly going to be asked. Mirroring the 100-day plan structure (listen-diagnose-install) signals consistency. "Don't propose anything in the first 30 days" is the senior move — most candidates pitch reforms in the first week.</p></div>
+            <div class="meta"><span class="lbl avoid">Avoid</span><p>A 90-day plan with 10 deliverables. A plan with too many things in it tells Karolos you'd be a status-report factory.</p></div>
+          </div></li>
+
+          <li><div>
+            <p class="q">How would you build trust with a portfolio CEO in the first 30 days post-investment?</p>
+            <p class="say">Show up useful, not impressive. The portfolio CEO has just taken our money — they're nervous about loss of control, about reporting burden, about whether we're going to be a partner or a babysitter. In the first 30 days I'd do three concrete things. First, ask them <em>"what's one thing I can take off your plate this month?"</em> and actually do it — not promise to do it. Second, do <em>not</em> launch a new reporting template in week one; instead, take whatever they're already producing and translate it into what we need. Third, never let them be surprised by anything coming from us — every escalation, every board ask, every Karolos visit they hear from me first. Trust is built in those three habits.</p>
+            <div class="meta"><span class="lbl">Why</span><p>Most candidates answer this with "relationship building." You're being concrete: take work off their plate, don't impose templates day one, no surprises. Each one is testable behaviour. Karolos has watched young investment professionals burn portfolio CEOs with exactly the opposite behaviours.</p></div>
+            <div class="meta"><span class="lbl avoid">Avoid</span><p>Talking about "alignment workshops" or "kickoff offsites." The portfolio CEO has a business to run.</p></div>
+          </div></li>
+
+          <li><div>
+            <p class="q">What's your weakest area going into this role?</p>
+            <p class="say">[Pick one that's genuinely true and is a stretch but learnable — and that doesn't disqualify you from the seat.] Two good shapes: "I haven't worked inside a fund structure before — the IC dynamics, the LP layer, the fund-level economics versus the portfolio level. I've ramped on adjacent things quickly but I want to be honest that's the steepest part of the curve for me." Or: "I've worked across functions but not specifically in PR / Partnerships at a sovereign-adjacent fund — there's a UAE-government-interface skill I'd be building from scratch, and that's the part I'd lean on you and the team for in the first six months."</p>
+            <div class="meta"><span class="lbl">Why</span><p>The answer that lands is <b>specific, learnable, and sized to a real gap</b>. The two shapes above name a real gap, signal you've thought about it, and give Karolos a concrete picture of where he'd need to invest in you.</p></div>
+            <div class="meta"><span class="lbl avoid">Avoid</span><p>"I'm a perfectionist." "I care too much." Lazy. Karolos has heard these from every candidate. Also avoid naming something that disqualifies you from the seat (e.g., "I'm not great at managing multiple stakeholders").</p></div>
+          </div></li>
+
+          <li><div>
+            <p class="q">Why should we hire YOU for this seat, specifically?</p>
+            <p class="say">Three things, briefly. One, I've sat on both sides of the operator-orchestrator line — I know what it feels like to be the portfolio CEO getting a value-creation call <em>and</em> the operator making that call. Two, I'm joining at the operating-system layer and that's what I'm best at — I get more done in the first 90 days of an unwritten role than in year two of a defined one. Three, I want to do this work specifically — not "a Chief of Staff role somewhere", this one, with this team, at this fund, at this moment. The match between the seat and what I do well is unusually tight.</p>
+            <div class="meta"><span class="lbl">Why</span><p>Three reasons, ranked. Specificity in the closer ("not 'a Chief of Staff role somewhere'") is what differentiates you. The "operating-system layer" framing tells Karolos you understand <em>why this is the right moment to hire you</em>.</p></div>
+            <div class="meta"><span class="lbl avoid">Avoid</span><p>Listing skills. Listing accomplishments. The answer is about <b>fit</b>, not <b>credentials</b> — credentials got you in the room.</p></div>
+          </div></li>
+
+          <li><div>
+            <p class="q">What questions do you have for me?</p>
+            <p class="say">Pivot to §10. Pick two or three, not ten. Rank by which one most invites him to <em>tell you something</em>.</p>
+            <div class="meta"><span class="lbl">Why</span><p>The right question is the one that gets him talking — that's how the last ten minutes turn into a conversation rather than a Q&amp;A.</p></div>
+          </div></li>
+
+        </ol>
+      </section>
+
+      <!-- 10 ASK -->
+      <section id="ask">
+        <div class="label"><span class="num">10</span><span class="tag">Your move</span></div>
+        <h2>Questions to ask Karolos — validated for this seat</h2>
+        <p>These are role-appropriate. You're being hired as an operator, so the strongest questions are about <em>the work</em> — cadence, decisions, bottlenecks, what success looks like — not about <em>the fund's strategy</em>, which would read as "I'm interviewing you back." Pick two or three; the first five are the sharpest.</p>
+
+        <ol class="alist">
+
+          <li><div>
+            <p class="q">If I'm sitting in this seat 12 months from now and it's <em>obviously working</em>, what does that look like to you?</p>
+            <p class="why"><b>Why this lands:</b> It pulls Karolos into describing his actual vision for the seat, which tells you (a) what he'll measure you on, (b) what's missing from the org today, and (c) whether his answer is grounded or aspirational. The "obviously working" phrasing forces specifics. If he can't answer it concretely, that's information too.</p>
+          </div></li>
+
+          <li><div>
+            <p class="q">Where's the bottleneck in Portfolio Operations today — what's the work that has piled up because there's no PMO seat in place yet?</p>
+            <p class="why"><b>Why this lands:</b> Assumes you're being hired because something is broken or missing — which is true. Demonstrates you understand they're not just filling an org-chart slot. His answer is the implicit job description.</p>
+          </div></li>
+
+          <li><div>
+            <p class="q">How do you want decisions to flow between you, Giacomo's Value Creation team, and the portfolio-company CEOs? Where's the line you want me to hold versus escalate?</p>
+            <p class="why"><b>Why this lands:</b> Directly asks about authority and escalation, which is the single hardest part of a Chief of Staff role. Karolos will respect the candidate who knows to ask this before day one rather than blunder into it. His answer is also a tell on how clear his own thinking is yet.</p>
+          </div></li>
+
+          <li><div>
+            <p class="q">What does your time-mix look like today across Value Creation, Partnerships, PR, and PMO — and where do you wish it shifted?</p>
+            <p class="why"><b>Why this lands:</b> Reveals what he <em>wants</em> to spend more time on and, by implication, what he wants you to absorb. This is the most useful single answer you can extract from him for understanding the actual job.</p>
+          </div></li>
+
+          <li><div>
+            <p class="q">Sheikh Hamdan's Dubai private-sector agentic AI mandate landed on 4 May — two-year horizon. How does that filter into the Value Creation playbook for portfolio companies like CarniStore? Are you adding an AI-readiness lens to the value-creation pillars, or treating it as portfolio-specific for now?</p>
+            <p class="why"><b>Why this lands:</b> Most recent UAE government move that directly touches EGF's portfolio (Dubai-HQ portfolio companies have a hard deadline). Asking it shows you read <em>this morning</em>, not last week. The structural framing — "add to the pillars vs. treat as portfolio-specific" — gives Karolos an easy on-ramp to talk shop. Surfaces a topic he is statistically very likely thinking about but hasn't necessarily formed a public position on yet — which means he gets to think out loud with you. That's the best possible mode for the last ten minutes of an interview.</p>
+          </div></li>
+
+          <li><div>
+            <p class="q">When you've worked with Chief-of-Staff types before — at ADNOC, at BCG, at EDB — what's the most common failure mode you've seen?</p>
+            <p class="why"><b>Why this lands:</b> References his specific career (ADNOC + BCG + EDB), which signals you did the work. Asks him to name failure patterns, which is more useful than asking "what does success look like." You'll learn exactly what he's screening against.</p>
+          </div></li>
+
+          <li><div>
+            <p class="q">Where does Giacomo's team end and the portfolio-company management begin, in practice — not on paper?</p>
+            <p class="why"><b>Why this lands:</b> The "in practice, not on paper" phrasing is senior. It signals you know the org chart is the polite fiction and the actual line is fuzzier. Karolos's answer tells you whether the Value Creation team is hands-on operators or board-level advisors — those are very different jobs.</p>
+          </div></li>
+
+          <li><div>
+            <p class="q">What's the operating cadence in Portfolio Operations today — weekly portfolio review, monthly scorecards, quarterly boards — and where is it weakest?</p>
+            <p class="why"><b>Why this lands:</b> Asks about the actual fabric of the job. The "where is it weakest" tail makes it impossible to answer with "we have everything in place" — forces a real diagnostic from him.</p>
+          </div></li>
+
+          <li><div>
+            <p class="q">How does the NCP reshape your operating model for the next 18 months? Is it changing how the IC sources, or how Portfolio Operations engages?</p>
+            <p class="why"><b>Why this lands:</b> References the most recent, biggest thing they did (MIITE-week launch) without making it about strategy. The split (IC sourcing vs. Portfolio Operations engagement) is the right operator-level frame.</p>
+          </div></li>
+
+          <li><div>
+            <p class="q">What's the hardest part of building Portfolio Operations from scratch that you didn't expect when you took the role?</p>
+            <p class="why"><b>Why this lands:</b> Invites him to be candid. People love this question because it gives them permission to vent a little. His answer is a window into where the real friction sits — and quite possibly into the work you'll inherit.</p>
+          </div></li>
+
+          <li><div>
+            <p class="q">In a one-year-old fund with two live portfolio companies, what's the right size for the Value Creation team — and where are you in that build?</p>
+            <p class="why"><b>Why this lands:</b> Shows you're thinking about org design, not just your individual seat. Tells him you're going to be useful as a partner in <em>building</em> the function, not just executing inside it.</p>
+          </div></li>
+
+        </ol>
+
+        <div class="callout"><div class="kicker">Picking on the spot</div><p>If you only have time for two: ask <b>Q01</b> (12-month "obviously working") and either <b>Q03</b> (decision flow / escalation line) or <b>Q05</b> (agentic AI mandate). Q03 wins if Karolos is being precise/operational. Q05 wins if he's been animated and forward-looking — the AI question gives him the most room to riff and is the freshest data point in your bag.</p></div>
+      </section>
+
+      <!-- 11 TRAPS -->
+      <section id="traps">
+        <div class="label"><span class="num">11</span><span class="tag">Don't step on these</span></div>
+        <h2>Credibility traps</h2>
+        <div class="traps">
+          <div class="col bad">
+            <h4>Junior says</h4>
+            <p>"IRR is what matters."</p>
+            <p>"We need to set up KPIs for the portfolio."</p>
+            <p>"I'd run a workshop with the portfolio-company CEO."</p>
+            <p>"The PMO will track the value-creation projects."</p>
+            <p>"Value creation means growing the business."</p>
+          </div>
+          <div class="col good">
+            <h4>You say</h4>
+            <p>"IRR is for LP optics, MOIC for absolute return, DPI is what's actually returned. They tell different stories."</p>
+            <p>"Different signals matter: leading operating metrics, value drivers, reporting KPIs. CPOs notice when they're conflated."</p>
+            <p>"Portfolio-company CEOs want a thesis and a resource, not a workshop. I'd diagnose intent versus capacity first."</p>
+            <p>"The PMO accelerates decisions. Tracking is a byproduct, not the product."</p>
+            <p>"Value <b>creation</b> is offensive — revenue, margin, multiple. Value <b>protection</b> is defensive — governance, downside, compliance. Conflating them signals you've never sat on a portfolio-company board."</p>
+          </div>
+        </div>
+
+        <div class="callout"><div class="kicker">Calibrated humility</div><p>If Karolos asks something you genuinely don't know — about UAE federal structure, an obscure metric, a portfolio company — <b>say so cleanly</b>. <em>"I don't know — what should I be reading?"</em> beats invention every time. He has been an advisor to the ADNOC CEO; he will spot bluffing instantly.</p></div>
+      </section>
+
+      <!-- 12 VOCAB -->
+      <section id="vocab">
+        <div class="label"><span class="num">12</span><span class="tag">Speak the language</span></div>
+        <h2>Operating vocabulary</h2>
+        <dl class="gloss">
+          <dt>IRR (Internal Rate of Return)</dt><dd>Time-weighted return on invested capital. Optics-heavy; penalizes long holds.</dd>
+          <dt>MOIC (Multiple on Invested Capital)</dt><dd>Total return divided by cost. Patient-capital favourite.</dd>
+          <dt>TVPI (Total Value to Paid-In)</dt><dd>Includes unrealized value. The main reportable for a year-1 fund.</dd>
+          <dt>DPI (Distributions to Paid-In)</dt><dd>Cash actually returned to LPs. The only one that pays bills.</dd>
+          <dt>RVPI (Residual Value to Paid-In)</dt><dd>The "still in the ground" piece — TVPI minus DPI.</dd>
+          <dt>J-curve</dt><dd>The early dip in fund returns before exits start. Year-1 EGF lives here.</dd>
+          <dt>100-day plan</dt><dd>The post-close stabilize-and-set-cadence playbook for a newly acquired portfolio company.</dd>
+          <dt>Value bridge</dt><dd>Decomposition of equity-value uplift into revenue growth, margin, multiple expansion, debt paydown.</dd>
+          <dt>EBITDA bridge</dt><dd>Period-over-period walk of EBITDA: volume, price, mix, cost, one-offs.</dd>
+          <dt>Run-rate synergies</dt><dd>Annualized cost or revenue synergies achievable once a programme is fully implemented.</dd>
+          <dt>NWC (Net Working Capital)</dt><dd>Receivables + inventory − payables. The most under-managed value lever in growth-stage portfolio companies.</dd>
+          <dt>ICV (In-Country Value)</dt><dd>ADNOC's localization mandate. <b>This is the gate to the Industrial Resilience Agreement.</b></dd>
+          <dt>NCP (National Champions Programme)</dt><dd>The EGF + MoIAT + MoET initiative launched 6 May 2026.</dd>
+          <dt>Operation 300bn</dt><dd>UAE's strategy to grow industrial GDP to AED 300bn by 2031. The macro thesis EGF ladders to.</dd>
+          <dt>The "missing middle"</dt><dd>EGF's own term — SMEs too big for VC, too entrepreneurial for traditional PE. Use it back to him.</dd>
+          <dt>Active minority</dt><dd>A minority equity stake with structured value-creation engagement. Governance via board seats and reporting rights, not control.</dd>
+          <dt>WIP (Work In Progress) limit</dt><dd>A cap on how many initiatives are active at once. The operating-system version of "fewer, bigger, better."</dd>
+          <dt>IC (Investment Committee)</dt><dd>The body that approves new deals. EGF's IC includes the CEO, CIO, CPO and board representation.</dd>
+          <dt>LP (Limited Partner)</dt><dd>A capital provider to a fund. For EGF, EDB is effectively the LP layer.</dd>
+          <dt>Agentic AI</dt><dd>AI systems that act autonomously — noticing issues, contacting parties, executing tasks — beyond chatbots or basic automation. Mandated for Dubai's private sector within two years (announced 4 May 2026).</dd>
+        </dl>
+      </section>
+
+      <!-- 13 CLOSING -->
+      <section id="closing">
+        <div class="label"><span class="num">13</span><span class="tag">Last 2 minutes</span></div>
+        <h2>Closing move</h2>
+        <div class="closing">
+          <h3>What to say when he asks "Anything else?"</h3>
+          <p>"One thing I want to leave you with — you're 12 months in, you've just launched the NCP, you have ADNOC offtake on the table, and Portfolio Operations is being wired up in real time. The Chief of Staff &amp; PMO seat right now is less about running a process and more about <em>building the operating system you'll run for the next decade</em>. That's the work I want. I'd like to do it with you."</p>
+          <p>Then: shut up. Smile. Don't elaborate. Let him close.</p>
+        </div>
+        <div class="callout"><div class="kicker">After the call</div><p>Within 90 minutes: send a 4-line follow-up referencing one specific thing he said + one specific thing about Tarmeem, CarniStore or the NCP. No attachment. No deck. Just the note.</p></div>
+      </section>
+
+    </main>
+  </div>
+
+  <footer>
+    <div>EGF Interview Dossier · 18 May 2026 · v4 (refreshed 31 May — no material change)</div>
+    <div>Press <kbd>Ctrl/Cmd&nbsp;+&nbsp;P</kbd> to print to PDF</div>
+  </footer>
+
+</div>
+
+<script>
+  // Close the mobile jump-nav after tapping a section link so it doesn't cover the content.
+  var mn = document.querySelector('.mobnav');
+  if (mn) mn.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ mn.open = false; });
+  });
+</script>
+
+</body>
+</html>
