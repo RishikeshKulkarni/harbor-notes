@@ -44,6 +44,7 @@
   .masthead .meta b{color:var(--ink-soft);font-weight:600}
 
   .layout{display:grid;grid-template-columns:200px 1fr;gap:3rem}
+  .layout > *{min-width:0}  /* let grid tracks constrain children so wide content (org chart) doesn't force page-wide overflow */
   @media (max-width:920px){.layout{grid-template-columns:1fr;gap:1rem}}
 
   nav.toc{position:sticky;top:3rem;align-self:start;font-size:.82rem;border-left:1px solid var(--rule);padding:.25rem 0 .25rem 1rem;max-height:calc(100vh - 5rem);overflow:auto}
@@ -84,7 +85,7 @@
   .person .ti{font-family:'JetBrains Mono',monospace;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
   .person .bd{font-size:.9rem;color:var(--ink-soft);line-height:1.5}
 
-  .org{font-family:'JetBrains Mono',monospace;font-size:.82rem;background:#fff;border:1px solid var(--rule);border-radius:6px;padding:1.1rem 1.25rem;color:var(--ink-soft);overflow:auto;white-space:pre;line-height:1.55}
+  .org{font-family:'JetBrains Mono',monospace;font-size:.82rem;background:#fff;border:1px solid var(--rule);border-radius:6px;padding:1.1rem 1.25rem;color:var(--ink-soft);overflow:auto;white-space:pre;line-height:1.55;max-width:100%}
   .org .you{background:#FFEEB7;padding:0 .35rem;border-radius:3px;color:var(--ink);font-weight:600}
   .org .him{background:#F2C9C0;padding:0 .35rem;border-radius:3px;color:var(--ink);font-weight:600}
   .org .her{background:#CDE0D2;padding:0 .35rem;border-radius:3px;color:var(--ink);font-weight:600}
@@ -185,6 +186,8 @@
     section h2{margin-bottom:.75rem}
     section p,section ul,section ol,section li{max-width:none}
     section{overflow-wrap:break-word}
+    section p,section li,.callout p,.qlist .q,.alist .q,.strat .body{overflow-wrap:anywhere}
+    .org{font-size:.72rem;padding:.9rem 1rem}
     .facts .v{font-size:1rem}
   }
 
